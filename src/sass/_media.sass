@@ -1,0 +1,49 @@
+@media (max-width: 1199px)
+    .container
+        width: 80%
+    .md_visible
+        display: none
+
+@media (max-width: 575px)
+    .promo
+        min-height: 0
+        padding-bottom: 41px
+        &__wrapper
+            padding-top: 55px
+        &__title
+            font-size: 35px
+        &__subtitle
+            font-size: 20px
+            padding-top: 5px
+        &__icons
+            margin-top: 40px
+            width: 70%
+
+@media (min-width: 320px) and (max-width: 520px)
+    .sm_visible
+        display: none
+    .promo
+        &__wrapper
+            display: block
+            margin: 0 auto
+        &__title
+            text-align: center
+            font-size: 30px
+        &__subtitle
+            text-align: center
+            font-size: 15px
+        &__icons
+            width: 100%
+            flex-direction: column
+            align-items: center
+        &__icon
+            margin-bottom: 40px
+            width: auto
+            img
+                margin-bottom: 10px
+        .button_main
+            width: auto
+            padding: 8px
+            display: block
+            margin: 0 auto
+            margin-top: 15px
