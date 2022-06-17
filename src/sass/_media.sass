@@ -1,10 +1,18 @@
-@media (max-width: 1199px)
+@media (max-width: 991px)
     .container
         width: 80%
     .md_visible
         display: none
+    
+    .advantage
+        &__items
+            justify-content: center
+        &__item
+            margin: 0 49px 50px 49px
+            width: 205px
 
-@media (max-width: 575px)
+
+@media (max-width: 767px)
     .promo
         min-height: 0
         padding-bottom: 41px
@@ -17,11 +25,27 @@
             padding-top: 5px
         &__icons
             margin-top: 40px
-            width: 70%
+            width: 100%
+    .advantage
+        &__items
+            margin-top: 55px
+        &__item
+            margin: 0 30px 40px 30px
+            width: 190px
+            img
+                margin-bottom: 30px
+                width: 35%
+        &__title
+            margin-bottom: 18px
+            font-size: 17px
+        &__descr
+            font-size: 13px
 
-@media (min-width: 320px) and (max-width: 520px)
+
+@media  (max-width: 520px)
     .sm_visible
         display: none
+
     .promo
         &__wrapper
             display: block
@@ -39,6 +63,7 @@
         &__icon
             margin-bottom: 40px
             width: auto
+            font-size: 12px
             img
                 margin-bottom: 10px
         .button_main
@@ -47,3 +72,24 @@
             display: block
             margin: 0 auto
             margin-top: 15px
+
+    .sect-title
+        font-size: 25px
+
+    .advantage
+        min-height: 0
+        padding: 55px 0 25px 0
+        &__items
+            margin-top: 45px
+        &__item
+            margin: 0 30px 30px 30px
+            img
+                margin-bottom: 20px
+                width: 30%
+        &__title
+            margin-bottom: 10px
+            font-size: 16px
+        &__descr
+            font-size: 12px
+
+    
