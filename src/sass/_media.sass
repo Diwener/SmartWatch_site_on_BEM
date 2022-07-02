@@ -15,7 +15,21 @@
         &__inner
             img
                 width: 100%
+    .catalog
+        &__content
+            justify-content: center
+        &-item
+            width: 250px
+            min-height: 400px
+            img
+                height: 150px
+            &__price
+                font-size: 17px
 
+    .button
+        &_buy
+            width: 110px           
+        
 @media (max-width: 767px)
     .promo
         min-height: 0
@@ -55,8 +69,52 @@
         &_consultation
             font-size: 30px
 
+    .catalog
+        &__content
+            justify-content: center
+            margin-top: 45px
+        &__tab
+            width: 140px
+            height: 35px
+            div
+                line-height: 35px
+                font-size: 14px
+        &-item
+            width: 220px
+            min-height: 350px
+            &__face
+                min-height: 250px
+            img
+                height: 100px
+            &__title
+                font-size: 15px
+            &__price
+                font-size: 15px
+            &__descr
+                font-size: 12px
+            &__more, &__back
+                font-size: 12px
+            &__list
+                li
+                    font-size: 12px
+                    margin-bottom: 10px
+            hr
+                width: 175px
+                margin: 18px 0
+            &__price
+                font-size: 15px
+                &_previous
+                    font-size: 12px
 
-@media  (max-width: 520px)
+    .button
+        &_buy
+            width: 90px
+            font-size: 12px
+
+                
+
+
+@media  (max-width: 575px)
     .sm_visible
         display: none
 
@@ -132,5 +190,87 @@
             &-active
                 width: 21px !important
                 height: 21px !important
+
+    .catalog
+        padding-bottom: 60px
+        &__content
+            justify-content: center
+            margin-top: 25px
+        &__tabs
+            flex-direction: column
+            align-items: center
+        &__tab
+            width: 200px
+            height: 45px
+            margin-bottom: 15px
+            div
+                line-height: 44px
+                font-size: 16px
+        &-item
+            width: 220px
+            min-height: 300px
+            margin: 10px 5px
+            &__face
+                min-height: 240px
+            img
+                height: 120px
+            &__title
+                font-size: 15px
+            &__price
+                font-size: 15px
+            &__descr
+                font-size: 12px
+            &__more, &__back
+                font-size: 12px
+            &__list
+                li
+                    font-size: 12px
+                    margin-bottom: 10px
+            &__back
+                transform: translateX(calc( -50% - 12px ))
+            hr
+                width: 180px
+                margin: 15px 0
+            
+            &__footer
+                flex-direction: column
+                justify-content: center
+
+            &__price
+                text-align: center
+                font-size: 21px
+                margin-bottom: 13px
+                &_previous
+                    font-size: 17px
+                    margin-bottom: 7px
+                    text-align: center
+                    font-size: 12px
+
+    .button
+        &_buy
+            width: 70%
+            font-size: 16px
+            height: 30px
+        
+
+    .reviews
+        padding-bottom: 40px
+        text-align: center
+        &__content
+            margin-top: 30px
+        &__item
+            flex-direction: column
+            align-items: center
+            img
+                width: 50%
+        hr
+            margin: 30px 0
+        &__descr
+            padding-left: 0
+            padding-top: 15px
+        &__man-descr
+            font-size: 13px
+        
+    
 
     
