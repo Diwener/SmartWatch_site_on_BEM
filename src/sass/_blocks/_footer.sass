@@ -1,0 +1,48 @@
+.footer
+    height: 630px
+    position: relative
+    text-align: center
+    &__info
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: 460px
+        height: 270px
+        background-color: $main-color
+        padding-top: 50px
+    &__addres
+        font-size: 20px
+        font-weight: 300
+        color: #ffffff
+    &__phone
+        font-size: 20px
+        font-weight: 500
+        color: #ffffff
+        text-decoration: none
+        &:hover
+            color: #ffffff
+    &__social
+        display: flex
+        width: 100%
+        justify-content: center
+        margin-top: 40px
+        align-items: center
+        &-item
+            display: block
+            width: 50px
+            height: 50px
+            border-radius: 100%
+            border: solid 2px #ffffff
+            position: relative
+            margin: 0 15px
+            transition: 0.2s all
+            &:hover
+                    background: rgba(255, 255, 255, 0.4)
+                    width: 55px
+                    height: 55px
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translateX(-50%) translateY(-50%)
